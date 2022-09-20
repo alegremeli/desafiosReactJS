@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Reem+Kufi+Ink&display=swap');
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFBE0B;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  font-family: 'Fredoka One', cursive;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 70px;
+}
+
+body {
+  background-color: #FDFFB6;
+  font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.carrito {
+  color:black;
+}
+
+img {
+  width:30%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 238, 238);
+}
+
+.bordeCards {
+border-radius: 10px;
+border: 2px solid black;
+}
+
+footer {
+  color: rgb(255, 238, 238);
+  display: flex;
+  justify-content: center;
+  background-color: #FF006E;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
