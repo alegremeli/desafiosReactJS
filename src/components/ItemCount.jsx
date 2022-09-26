@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-const ItemCount = ({ initial, stock }) => 
+const ItemCount = ({ initial, stock, onAdd}) => 
 {
     const [Productos, setProductos] = useState(initial);
 
@@ -15,6 +15,15 @@ const ItemCount = ({ initial, stock }) =>
         setProductos(Productos - 1)
     }
 
+    function agregarProducto() {
+        if (Productos == 1) {
+            alert("Agregaste un producto al carrito")
+        } else {
+            alert(`Agregaste ${Productos} productos al carrito`)
+        }
+        onAdd(Productos) // Cuando se agrega un producto, se cambia el estado de "contador", provocando que se quite el ItemCount y se coloque el Link
+    }
+
     
     return (
         <>
@@ -22,7 +31,8 @@ const ItemCount = ({ initial, stock }) =>
             <button onClick={deleteProduct}>-</button> {Productos}
             <button onClick={addProduct}>+</button> 
         </div>
-            </>
+        <button onClick={agregarProducto} disabled={Productos==0}>Añadir al carrito</button>
+        </>
     );
 }
 

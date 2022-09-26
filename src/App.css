@@ -27,8 +27,21 @@ body {
 }
 
 img {
-  width:30%;
+  width:50%;
+  height: 50%;
 }
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.imagenes {
+  margin: 30px;
+}
+
 
 a {
   text-decoration: none;
