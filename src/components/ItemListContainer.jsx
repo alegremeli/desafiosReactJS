@@ -12,12 +12,12 @@ const ItemListContainer = () => {
     useEffect(() => {
         setLoading (true)
         if (id != undefined){
-            Fetch(2000, Productos.filter (item => item.categoryid == id))
+            Fetch(200, Productos.filter (item => item.categoryid == id))
             .then(result => setData(result))
             .catch(error => console.log(error)) 
             .finally(() =>  setLoading (false))
         }else {
-            Fetch(2000, Productos)
+            Fetch(200, Productos)
             .then(result => setData(result))
             .catch(error => console.log(error)) 
             .finally(() =>  setLoading (false))
