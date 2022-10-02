@@ -11,7 +11,7 @@ import CartContextProvider from './components/CartContext'
 function App() {
   return (
     <>
-            <CartContextProvider>
+    <CartContextProvider>
     <BrowserRouter >
     <NavBar />
     <Routes>

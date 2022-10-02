@@ -21,13 +21,32 @@ const CartContextProvider = ({children}) =>{
     const removeItem = (categoryId)  => setCartList(cartList.filter((item) => item.id !== categoryId))
 
     const clearProducts = () => {
-        setCartList ()
+        setCartList ([])
+    }
+
+    const totalCantidad = () => {
+        return cartList.reduce ((valorAnterior, valorActual)=> valorAnterior + valorActual.cantidad, 0) 
+    }
+
+    const precioTotal = () => {
+        return cartList.reduce ((valorAnterior, valorActual)=> valorAnterior + (valorActual.precio*valorActual.cantidad), 0) 
     }
 
 
+const value = {
+    cartList, 
+    addItem, 
+    clearProducts, 
+    removeItem, 
+    isInCart,
+    totalCantidad,
+    precioTotal
+
+}
+
 
 return (
-    <CartContext.Provider value={{cartList, addItem, clearProducts, removeItem, isInCart}}>
+    <CartContext.Provider value={value}>
         {children}
             </CartContext.Provider >
 );
