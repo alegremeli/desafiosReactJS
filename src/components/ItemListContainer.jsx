@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import Fetch from '../utils/Fetch';
-import Productos from '../containers/Productos';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, query, where } from "firebase/firestore";
+import {db} from '../utils/FirebaseConfig';
 
 const ItemListContainer = () => {
     const [data, setData] = useState([]);
@@ -11,17 +11,24 @@ const ItemListContainer = () => {
     const {id} = useParams();
     useEffect(() => {
         setLoading (true)
-        if (id != undefined){
-            Fetch(200, Productos.filter (item => item.categoryid == id))
-            .then(result => setData(result))
-            .catch(error => console.log(error)) 
-            .finally(() =>  setLoading (false))
-        }else {
-            Fetch(200, Productos)
-            .then(result => setData(result))
-            .catch(error => console.log(error)) 
-            .finally(() =>  setLoading (false))
-        }  
+        async function consultaFirestore(){
+            let q
+            if (id){
+                q = query(collection(db, "Productos"), where('categoryid', '==', parseInt(id)))
+            }else {
+                q = query(collection(db, "Productos"))
+            }
+
+        const querySnapshot = await getDocs(q);
+        const dataFromFirestore = querySnapshot.docs.map(document => ({
+            id: document.id,
+            ...document.data()
+        }))
+        setLoading(false)
+        return dataFromFirestore
+    }
+    consultaFirestore()
+    .then(result => setData(result))
     }, [id])
 
     if (loading == true) {

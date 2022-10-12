@@ -7,7 +7,7 @@ header {
   background-color: #FFBE0B;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   font-family: 'Fredoka One', cursive;
-
+  font-size: 1.6rem;
 }
 
 nav ul li {
@@ -20,6 +20,7 @@ nav ul li {
 body {
   background-color: #FDFFB6;
   font-family: 'Reem Kufi Ink', sans-serif;
+  font-size: 1.3rem;
 }
 
 .carrito {
