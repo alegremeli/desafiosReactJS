@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
             ...result.data() 
         }))
         .finally(() => setLoading(false))
-    }, [])
+    }, [id])
 
     
     if (loading == true) {

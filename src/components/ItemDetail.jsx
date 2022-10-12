@@ -13,9 +13,9 @@ const ItemDetail = ({item}) => {
         addItem(item, cantidadItems)
     }
     return (
-<div>
+<div className='cardsDetail' >
    <> 
-        <h1>{item.nombre}</h1>
+        <h2>{item.nombre}</h2>
         <p>{item.descripcion}</p>
         <p>Stock disponible: {item.stock}</p>
         <p>${item.precio}</p>
@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
         {
             (contador == 0)
             ? <ItemCount stock={item.stock} initial={0} onAdd={onAdd}/>
-            : <Link to="/cart"> <button>Finalizar compra</button> </Link>
+            : <Link to="/cart"> <button className='botonCarrito' >Ir al carrito</button> </Link>
             }
 
         </div>

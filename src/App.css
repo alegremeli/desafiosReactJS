@@ -7,7 +7,7 @@ header {
   background-color: #FFBE0B;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   font-family: 'Fredoka One', cursive;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 nav ul li {
@@ -20,29 +20,23 @@ nav ul li {
 body {
   background-color: #FDFFB6;
   font-family: 'Reem Kufi Ink', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .carrito {
   color:black;
 }
 
-img {
-  width:50%;
-  height: 50%;
-}
-
 .cards {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: space-around;
 }
 
-.imagenes {
-  margin: 30px;
+.cardsDetail {
+  text-align: center;
 }
-
 
 a {
   text-decoration: none;
@@ -56,6 +50,62 @@ a {
 .bordeCards {
 border-radius: 10px;
 border: 2px solid black;
+}
+
+.boton {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #ffd154;
+}
+
+.botonDetalles {
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
+}
+
+.botonAdd {
+  height: 30px;
+  width: 145px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
+}
+
+.botonCarrito {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
+}
+
+.botonEliminar {
+  height: 30px;
+  width: 160px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
+}
+
+.botonEliminarTodo {
+  height: 30px;
+  width: 130px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
+}
+
+.botonFinalizar {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffd154;
 }
 
 footer {
