@@ -42,13 +42,13 @@ const Cart = () => {
         {
             cartList.length === 0 ?
             <div>
-                <p>Tu carrito esta vacío :c</p>
-                <Link className='linkInicio' to="/">Ir al inicio</Link>
+                <h2>Tu carrito esta vacío :c</h2>
+                <Link className='linkInicio' to="/">Ir a la página principal</Link>
             </div>
             :
             cartList.map( item => 
             <div key={item.id}>
-                <img src={`/img/${item.imagen}`} alt="" />    
+                <img className='imagenesCart' src={`/img/${item.imagen}`} alt="" />    
                 <p>{item.nombre}</p>
                 <p>${item.precio}</p>
                 <p>Cantidad: {item.cantidad}</p>

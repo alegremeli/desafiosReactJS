@@ -4,6 +4,7 @@ import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from "firebase/firestore";
 import {db} from '../utils/FirebaseConfig';
+import Loader from './Loader';
 
 const ItemListContainer = () => {
     const [data, setData] = useState([]);
@@ -32,11 +33,11 @@ const ItemListContainer = () => {
     }, [id])
 
     if (loading == true) {
-        return <p>Cargando</p>
+        return <Loader></Loader>
     }
 
     return (
-        <div >
+        <div>
         <ItemList items = {data}/>
         </div>
     )

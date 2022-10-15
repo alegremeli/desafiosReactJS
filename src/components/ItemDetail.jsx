@@ -19,7 +19,7 @@ const ItemDetail = ({item}) => {
         <p>{item.descripcion}</p>
         <p>Stock disponible: {item.stock}</p>
         <p>${item.precio}</p>
-        <img src={`/img/${item.imagen}`} />
+        <img className='imagenesDetail'  src={`/img/${item.imagen}`} />
         <div className='botones'>
         {
             (contador == 0)
