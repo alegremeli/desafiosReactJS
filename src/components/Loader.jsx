@@ -1,5 +1,5 @@
 import React from 'react'
-import {Pulsar} from '@uiball/loaders'
+import { Pulsar } from '@uiball/loaders'
 
 
 const Loader = () => {

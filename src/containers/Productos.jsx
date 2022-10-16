@@ -6,7 +6,7 @@ const Productos = [
         precio: 2000,
         imagen:'tazafrutas.webp',
         categoryid:1,
-        descripcion: '✨La taza presenta una variedad de frutas pintadas a mano brillantes en el exterior y el interior de la taza.'
+        descripcion: '✨La taza presenta una variedad de frutas pintadas a mano, brillantes en el exterior y en su interior.'
     },
     {
         id:2,
@@ -15,7 +15,7 @@ const Productos = [
         precio: 2000,
         imagen:'tazafrutillas.webp',
         categoryid:1,
-        descripcion: '✨La taza presenta una variedad de frutillas pintadas a mano brillantes en el exterior y el interior de la taza.'
+        descripcion: '✨La taza presenta una variedad de frutillas pintadas a mano, brillantes en el exterior y en su interior.'
     },
     {
         id:3,
@@ -24,7 +24,7 @@ const Productos = [
         precio:2000,
         imagen:'tazayingyang.webp',
         categoryid:1,
-        descripcion: '✨Taza ying yang pintada a mano brillante en el exterior y el interior de la taza.'
+        descripcion: '✨Taza ying yang pintada a mano brillante en el exterior y en su interior.'
     },
     {
         id:4,
@@ -33,7 +33,7 @@ const Productos = [
         precio: 650,
         imagen:'ananas.webp',
         categoryid:2,
-        descripcion: '✨Este plato se puede usar para cualquier cosa y se puede colocar en cualquier lugar de su espacio que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
+        descripcion: 'Este plato se puede usar para cualquier cosa y se puede colocar en algún lugar de su hogar que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
     },
     {
         id:5,
@@ -42,7 +42,7 @@ const Productos = [
         stock: 10,
         imagen:'frutillas.webp',
         categoryid:2,
-        descripcion: '✨Este plato se puede usar para cualquier cosa y se puede colocar en cualquier lugar de su espacio que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
+        descripcion: 'Este plato se puede usar para cualquier cosa y se puede colocar en algún lugar de su hogar que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
     },
     {
         id:6,
@@ -51,7 +51,7 @@ const Productos = [
         stock: 5,
         imagen:'paltas.webp',
         categoryid:2,
-        descripcion: '✨Este plato se puede usar para cualquier cosa y se puede colocar en cualquier lugar de su espacio que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
+        descripcion: 'Este plato se puede usar para cualquier cosa y se puede colocar en algún lugar de su hogar que necesite iluminarse. ✨Dimensiones: 4.5cm x 3.5cm.'
     },
 
     {

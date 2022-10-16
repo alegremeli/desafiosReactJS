@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from "firebase/firestore";
-import {db} from '../utils/FirebaseConfig';
+import { db } from '../utils/FirebaseConfig';
 import Loader from './Loader';
 
 const ItemListContainer = () => {
@@ -38,7 +38,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-        <ItemList items = {data}/>
+        <ItemList items = { data }/>
         </div>
     )
 

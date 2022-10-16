@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import {CartContext} from './CartContext'
+import { CartContext } from './CartContext'
 import { Link } from 'react-router-dom'
 import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 import { db } from "../utils/FirebaseConfig"
@@ -38,16 +38,16 @@ const Cart = () => {
     }
     return (
         <>
-        <h1>Carrito c:</h1>
+        <h1 className='tituloCarrito' >Carrito c:</h1>
         {
             cartList.length === 0 ?
-            <div>
+            <div className='textoCarrito'>
                 <h2>Tu carrito esta vacío :c</h2>
                 <Link className='linkInicio' to="/">Ir a la página principal</Link>
             </div>
             :
             cartList.map( item => 
-            <div key={item.id}>
+            <div className='itemsCarrito'  key={item.id}>
                 <img className='imagenesCart' src={`/img/${item.imagen}`} alt="" />    
                 <p>{item.nombre}</p>
                 <p>${item.precio}</p>

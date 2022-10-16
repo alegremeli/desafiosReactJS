@@ -4,8 +4,8 @@ import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {CartContext} from './CartContext'
 
-const ItemDetail = ({item}) => {
-    const [contador, setContador] = useState(0); // Inicialmente, contador es 0
+const ItemDetail = ({ item }) => {
+    const [contador, setContador] = useState(0); // Inicialmente el contador es 0
     const {addItem}  = useContext(CartContext);
 
     const onAdd = (cantidadItems) => {

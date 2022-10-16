@@ -28,6 +28,18 @@ body {
   color: #FF006E;
 }
 
+.textoCarrito {
+  text-align: center;
+}
+
+.tituloCarrito {
+  text-align: center;
+}
+
+.itemsCarrito {
+  text-align: center;
+}
+
 .loader {
   position: absolute;
   right: 50%;

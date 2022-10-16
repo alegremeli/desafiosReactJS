@@ -5,12 +5,12 @@ const ItemCount = ({ initial, stock, onAdd}) =>
 {
     const [Productos, setProductos] = useState(initial);
 
-    function addProduct () {
+    function addProduct () { //Aumenta el contador en uno, si hay stock
         if (Productos < stock)
         setProductos(Productos + 1)
     }
 
-    function deleteProduct () {
+    function deleteProduct () { //Disminuyo en uno, si la cantidad es mayor a cero
         if (Productos >= 1)
         setProductos(Productos - 1)
     }

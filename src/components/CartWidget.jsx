@@ -1,8 +1,8 @@
 import React from 'react';
 import { Cart4 } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
-import {useContext} from 'react';
-import {CartContext} from './CartContext'
+import { useContext } from 'react';
+import { CartContext } from './CartContext'
 
 const CartWidjet = () => {
 
