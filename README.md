@@ -43,3 +43,5 @@ Melina Alegre
 A mi profesor de cursada, [Alex Marin Mendez](https://www.linkedin.com/in/alexmarinmendez/?originalSubdomain=pe) , quien supo darme el conocimiento necesario para llevar a cabo este proyecto.
 
 A mi tutor,  [Ernesto Gilberto Valenzuela](https://www.linkedin.com/in/gilberto-valenzuela/) , quien me acompaño durante toda la cursada resolviendo mis dudas y corrigiendo errores.
+
+![image](https://github.com/alegremeli/desafiosReactJS/blob/8c8ba1c71ba0b9b999bb9a7046cf29222e194875/public/img/e-commerce.gif)
